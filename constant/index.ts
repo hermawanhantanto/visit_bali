@@ -1,6 +1,6 @@
 export const topBar = [
   {
-    title: "Home",
+    title: "Beranda",
     path: "/",
   },
   {
@@ -8,11 +8,11 @@ export const topBar = [
     path: "/destinasi",
   },
   {
-    title: "Aktivitas",
-    path: "/aktivitas",
+    title: "Artikel",
+    path: "/artikel",
   },
   {
-    title: "Akomodasi",
-    path: "/akomodasi",
+    title: "Aktivitas",
+    path: "/aktivitas",
   },
 ];

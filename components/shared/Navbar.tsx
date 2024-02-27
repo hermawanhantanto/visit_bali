@@ -6,13 +6,13 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between absolute w-full">
+    <nav className="flex items-center justify-between w-full">
       <Link href="/">
         <Image
           src="/assets/images/logo.png"
           alt="Visit Bali"
           width={120}
-          height={20}
+          height={50}
           className="object-contain"
         />
       </Link>
@@ -21,27 +21,27 @@ const Navbar = () => {
           <Link
             href={item.path}
             key={item.path}
-            className="font-medium hover:text-abu-abu text-sm group hover:underline ease-out duration-300 transition-colors"
+            className="text-[14px] font-bold px-5 text-[rgb(13,13,13)] "
           >
             {item.title}
           </Link>
         ))}
       </div>
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-10">
+        <Link
+          href="/search"
+          className="text-[rgb(13,13,13)] font-semibold text-[12px] drop-shadow-lg"
+        >
+          <Search />
+        </Link>
         <UserButton
           afterSignOutUrl="/sign-up"
           appearance={{
             elements: {
-              avatarBox: "h-10 w-10",
+              avatarBox: "h-8 w-8",
             },
           }}
         />
-        <Link
-          href="/search"
-          className="rounded-full items-center flex justify-center bg-black text-white p-2 hover:bg-hover-btn transition-colors ease-out duration-300"
-        >
-          <Search size={20} />
-        </Link>
       </div>
     </nav>
   );

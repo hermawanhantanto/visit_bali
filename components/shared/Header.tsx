@@ -41,9 +41,9 @@ const Header = () => {
   };
 
   return (
-    <header className="flex w-full h-screen bg-main-hero bg-cover bg-center bg-no-repeat justify-center items-center">
+    <header className="flex w-full h-screen bg-main-hero bg-cover bg-center bg-no-repeat justify-center items-center ">
       <div className="w-[1440px] flex flex-col gap-2">
-        <h1 className="text-white  text-[61px] font-black drop-shadow-lg animate-text-bounce-slow">
+        <h1 className="text-white text-[61px] font-black drop-shadow-lg animate-text-bounce-slow">
           <span className="border-r-white drop-shadow-lg border-r-4">
             {text}
           </span>
