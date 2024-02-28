@@ -1,26 +1,22 @@
-"use client";
-import Footer from "@/components/shared/Footer";
+import CarouselContainer from "@/components/shared/CarouselContainer";
 import Header from "@/components/shared/Header";
+import RenderGambar from "@/components/shared/RenderGambar";
+import RenderVideo from "@/components/shared/RenderVideo";
 import { MoveLeft, MoveRight } from "lucide-react";
-import { CldImage, CldVideoPlayer } from "next-cloudinary";
 import "next-cloudinary/dist/cld-video-player.css";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col relative top-0 w-full -z-10">
-      <Header />
-      <div className="max-w-[1440px] mx-auto w-full">
+    <main className="flex flex-col relative top-0 w-full">
+      <div className="-z-10">
+        <Header />
+      </div>
+      <div className="max-w-[1440px] mx-auto w-full ">
         <h1 className="my-10 font-black text-[32px] text-center">
           Saksikan Keindahan Alam dan Budaya Pulau Dewata
         </h1>
-        <CldVideoPlayer
-          width="1080"
-          height="720"
-          src="visit_bali/maorkcii6nwslm69msho"
-          className="object-contain rounded"
-          id="video-player"
-        />
+        <RenderVideo />
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-4">
             <h4 className="text-[40px] font-bold">
@@ -41,21 +37,23 @@ export default function Home() {
               <MoveRight size={24} />
             </Link>
           </div>
-          <CldImage
+          <RenderGambar
             width={720}
             height={340}
-            src="visit_bali/ejddpoeydajciibzwcmb"
+            url="visit_bali/ejddpoeydajciibzwcmb"
             alt="Bali"
             className="rounded object-contain"
+            id="image-1"
           />
         </div>
         <div className="flex items-center justify-between mt-36">
-          <CldImage
+          <RenderGambar
             width={720}
             height={340}
-            src="visit_bali/uipjyiscoqhaqpdia1ug"
+            url="visit_bali/uipjyiscoqhaqpdia1ug"
             alt="Bali"
             className="rounded object-contain"
+            id="image-2"
           />
           <div className="flex flex-col gap-4">
             <h4 className="text-[40px] font-bold">
@@ -75,6 +73,21 @@ export default function Home() {
               <MoveLeft size={24} />
               Explore Now
             </Link>
+          </div>
+        </div>
+        <div className="flex flex-col gap-10 mt-36">
+          <div className="flex items-center justify-between">
+            <h4 className="text-[40px] font-bold">Destinasi Populer di Bali</h4>
+            <Link
+              href={"/destinasi"}
+              className="flex items-center gap-2 py-2.5 px-6 border-2 border-abu-abu rounded border-opacity-30 hover:bg-abu-abu hover:text-white transition-colors ease-in-out duration-300"
+            >
+              Lihat Semua
+              <MoveRight size={16} />
+            </Link>
+          </div>
+          <div className="mt-12">
+            <CarouselContainer />
           </div>
         </div>
       </div>

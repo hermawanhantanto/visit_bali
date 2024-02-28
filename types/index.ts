@@ -3,3 +3,7 @@ export interface GetAllDestinationParams {
   filter?: string;
   q?: string;
 }
+
+export interface GetDestinationByIdParams {
+  id: string;
+}

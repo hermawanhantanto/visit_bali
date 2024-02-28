@@ -12,7 +12,10 @@ interface Props {
 }
 
 const DestinasiPage = async ({ searchParams }: Props) => {
-  const results = await getAllDestinations({ filter: searchParams.filter });
+  const results = await getAllDestinations({
+    filter: searchParams.filter,
+    page: Number(searchParams.page),
+  });
   return (
     <section className="max-w-[1440px] mx-auto pt-36">
       <h1 className="text-[40px] font-black">Destinasi</h1>
@@ -25,9 +28,18 @@ const DestinasiPage = async ({ searchParams }: Props) => {
         <DestinationFilters />
       </div>
       <div className="flex flex-col gap-10 mt-10">
-        {results.destinations.map((destination: IDestination) => (
-          <DestinationCard key={destination.id} destination={destination} />
-        ))}
+        {results.destinations.length <= 0 ? (
+          <h1 className="mt-10 text-abu-abu font-bold text-xl">
+            Data tidak ditemukan!
+          </h1>
+        ) : (
+          results.destinations.map((destination: IDestination) => (
+            <DestinationCard
+              key={destination._id}
+              destination={JSON.stringify(destination)}
+            />
+          ))
+        )}
       </div>
       <div className="flex w-full justify-center mt-10">
         <Pagination

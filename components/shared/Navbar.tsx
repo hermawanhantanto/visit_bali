@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between w-full absolute top-0">
+    <nav className="flex items-center justify-between w-full absolute top-0 z-20">
       <Link href="/">
         <Image
           src="/assets/images/logo.png"
