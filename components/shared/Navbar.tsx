@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between w-full">
+    <nav className="flex items-center justify-between w-full absolute top-0">
       <Link href="/">
         <Image
           src="/assets/images/logo.png"
           alt="Visit Bali"
-          width={120}
+          width={150}
           height={50}
           className="object-contain"
         />
@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link
             href={item.path}
             key={item.path}
-            className="text-[14px] font-bold px-5 text-[rgb(13,13,13)] "
+            className="text-lg px-5 text-abu-abu hover:text-abu-abu/50 font-bold"
           >
             {item.title}
           </Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="flex items-center gap-10">
         <Link
           href="/search"
-          className="text-[rgb(13,13,13)] font-semibold text-[12px] drop-shadow-lg"
+          className="text-abu-abu hover:text-abu-abu/50 text-lg drop-shadow-lg font-bold"
         >
           <Search />
         </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
           afterSignOutUrl="/sign-up"
           appearance={{
             elements: {
-              avatarBox: "h-8 w-8",
+              avatarBox: "h-10 w-10",
             },
           }}
         />

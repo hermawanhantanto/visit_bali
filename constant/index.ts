@@ -16,3 +16,14 @@ export const topBar = [
     path: "/aktivitas",
   },
 ];
+
+export const filterDestination = [
+  "Semua",
+  "Pantai",
+  "Gunung",
+  "Air Terjun",
+  "Hutan dan Alam",
+  "Pulau dan Snorkeling",
+  "Danau",
+  "Desa Tradisional",
+];

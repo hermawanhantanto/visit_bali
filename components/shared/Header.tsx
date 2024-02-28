@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <header className="flex w-full h-screen bg-main-hero bg-cover bg-center bg-no-repeat justify-center items-center ">
-      <div className="w-[1440px] flex flex-col gap-2">
+      <div className="max-w-[1440px] flex flex-col gap-2 text-center">
         <h1 className="text-white text-[61px] font-black drop-shadow-lg animate-text-bounce-slow">
           <span className="border-r-white drop-shadow-lg border-r-4">
             {text}
@@ -52,14 +52,7 @@ const Header = () => {
           Jelajahi keindahan alam dan budaya yang memukau. Dapatkan pengalaman
           liburan yang tak terlupakan di Bali.
         </p>
-        <Link
-          className="text-white font-bold text-sm py-2.5 px-5 bg-black w-fit rounded drop-shadow-lg hover:bg-hover-btn transition-colors
-          ease-in-out duration-300 mt-10 flex items-center justify-between gap-4"
-          href="/visit-bali"
-        >
-          READ MORE
-          <MoveRight size={24} />
-        </Link>
+      
       </div>
     </header>
   );
