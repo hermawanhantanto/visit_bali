@@ -35,7 +35,7 @@ const CarouselContainer = async () => {
                     className="rounded sm:h-[300px] h-[200px]"
                     width={540}
                     height={340}
-                    id={item._id}
+                    id={String(item._id)}
                     alt={item.judul}
                   />
                 </CardHeader>
