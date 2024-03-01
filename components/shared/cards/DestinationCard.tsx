@@ -10,7 +10,7 @@ interface Props {
 }
 
 const DestinationCard = ({ destination }: Props) => {
-  const destinasi:IDestination = JSON.parse(destination);
+  const destinasi: IDestination = JSON.parse(destination);
   return (
     <div className="flex items-center gap-10">
       <CldImage
@@ -19,6 +19,7 @@ const DestinationCard = ({ destination }: Props) => {
         src={destinasi.gambar}
         alt={destinasi.judul}
         className="rounded contain max-w-[540px] max-h-[340px]"
+        id={destinasi.gambar}
       />
       <div className="flex flex-col gap-4">
         <div className="flex items-center gap-4">

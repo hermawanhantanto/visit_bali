@@ -108,7 +108,7 @@ export default function Home() {
             url="visit_bali/mh9bs4xbwl0gn4ydbwfa"
             alt="Bali"
             className="rounded object-contain "
-            id="image-1"
+            id="image-3"
           />
         </div>
         <div className="flex items-center justify-between mt-36">
@@ -118,7 +118,7 @@ export default function Home() {
             url="visit_bali/ktiai5mf9qztq75vdv3c"
             alt="Bali"
             className="rounded object-contain"
-            id="image-2"
+            id="image-4"
           />
           <div className="flex flex-col gap-4">
             <h4 className="text-[40px] font-bold">
