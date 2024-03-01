@@ -22,7 +22,7 @@ export default function Home() {
             <h4 className="text-[40px] font-bold">
               Eksplorasi Keajaiban Alam Bali
             </h4>
-            <p className="text-xl max-w-[500px] text-abu-abu">
+            <p className="text-xl max-w-[500px] text-abu-abu leading-10">
               Jelajahi pantai-pantai berpasir putih yang memikat, dan merasakan
               deburan ombak yang menenangkan. Dari hutan hujan hingga
               gunung-gunung yang megah, setiap sudut Bali menawarkan pengalaman
@@ -59,7 +59,7 @@ export default function Home() {
             <h4 className="text-[40px] font-bold">
               Warisan Budaya yang Mendalam
             </h4>
-            <p className="text-xl max-w-[500px] text-abu-abu">
+            <p className="text-xl max-w-[500px] text-abu-abu leading-10">
               Menyelami kekayaan warisan budaya Bali dengan mengunjungi
               pura-pura yang megah, menikmati pertunjukan tari tradisional, dan
               merasakan kehidupan sehari-hari yang penuh dengan spiritualitas
@@ -88,6 +88,48 @@ export default function Home() {
           </div>
           <div className="mt-12">
             <CarouselContainer />
+          </div>
+        </div>
+        <div className="flex items-center justify-between mt-36">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-[40px] font-bold max-w-[600px]">
+              Rasakan Kehangatan Keramahan Lokal
+            </h4>
+            <p className="text-xl max-w-[500px] text-abu-abu leading-10">
+              Temui senyum ramah dan sapaan hangat saat Anda menjelajahi
+              kampung-kampung tradisional dan menikmati hidangan lezat yang
+              disiapkan dengan cinta. Ini bukan sekadar perjalanan, tetapi
+              pengalaman yang membuat Anda merasa seperti di rumah.
+            </p>
+          </div>
+          <RenderGambar
+            width={720}
+            height={340}
+            url="visit_bali/mh9bs4xbwl0gn4ydbwfa"
+            alt="Bali"
+            className="rounded object-contain "
+            id="image-1"
+          />
+        </div>
+        <div className="flex items-center justify-between mt-36">
+          <RenderGambar
+            width={720}
+            height={340}
+            url="visit_bali/ktiai5mf9qztq75vdv3c"
+            alt="Bali"
+            className="rounded object-contain"
+            id="image-2"
+          />
+          <div className="flex flex-col gap-4">
+            <h4 className="text-[40px] font-bold">
+              Rasakan Bali Melalui Lidah Anda
+            </h4>
+            <p className="text-xl max-w-[500px] text-abu-abu leading-10">
+              Sambutlah setiap hidangan sebagai perjalanan rasa yang membawa
+              Anda lebih dekat dengan budaya dan tradisi Bali. Dari pasar
+              tradisional hingga restoran mewah, pulau ini menawarkan pengalaman
+              kuliner yang tak terlupakan.
+            </p>
           </div>
         </div>
       </div>

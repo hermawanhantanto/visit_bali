@@ -25,7 +25,7 @@ const CarouselContainer = async () => {
         {results?.map((item: any) => (
           <CarouselItem
             key={item._id}
-            className="pl-1 md:basis-1/2 lg:basis-1/3"
+            className="pl-1 md:basis-1/2 lg:basis-1/3 flex"
           >
             <Link className="p-1" href={`/destinasi/${item._id}`}>
               <Card>
@@ -50,8 +50,6 @@ const CarouselContainer = async () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 };

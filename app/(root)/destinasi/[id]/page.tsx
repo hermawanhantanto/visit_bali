@@ -12,9 +12,9 @@ interface Props {
 
 const DestinasiPageId = async ({ params }: Props) => {
   const result = await getDestinationById({ id: params.id });
-  console.log(result);
+  
   return (
-    <section className="pt-40 max-w-[1440px] mx-auto">
+    <section className="pt-40 max-w-[1440px] mx-auto pl-8">
       <h2 className="font-bold text-[48px]">{result.destination.judul}</h2>
       <p className="mt-4 max-w-[800px] text-abu-abu leading-8 text-lg ">
         {result.destination.deskripsi}
