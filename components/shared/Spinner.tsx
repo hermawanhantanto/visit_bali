@@ -1,8 +1,17 @@
 import { RotateCw } from "lucide-react";
-const Spinner = () => {
-  return (
-    <RotateCw size={20} className="animate-spin text-white" />
-  )
+
+interface Props {
+  color?: string;
+  size?: number;
 }
 
-export default Spinner
+const Spinner = ({ color, size }: Props) => {
+  return (
+    <RotateCw
+      size={size || 20}
+      className={`animate-spin text-${color || "white"}`}
+    />
+  );
+};
+
+export default Spinner;
