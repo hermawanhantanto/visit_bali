@@ -23,3 +23,14 @@ export async function createUser(params: CreateUserParams) {
   }
 }
 
+export async function getUserByClerkId(clerkId: string) {
+  try {
+    await connectToDatabase();
+    const user = await User.findOne({ clerkId });
+    if (!user) throw new Error("User not found");
+    return user;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+}

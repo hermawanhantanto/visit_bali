@@ -2,6 +2,7 @@ import RenderGambar from "@/components/shared/RenderGambar";
 import { Badge } from "@/components/ui/badge";
 import { getDestinationById } from "@/lib/action/destination.action";
 import { CldImage } from "next-cloudinary";
+import { notFound } from "next/navigation";
 import result from "postcss/lib/result";
 
 interface Props {
@@ -11,7 +12,12 @@ interface Props {
 }
 
 const DestinasiPageId = async ({ params }: Props) => {
+
   const result = await getDestinationById({ id: params.id });
+
+  if (!result) {
+    return notFound();
+  }
   
   return (
     <section className="pt-40 max-w-[1440px] mx-auto pl-8">

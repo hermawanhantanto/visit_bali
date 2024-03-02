@@ -64,7 +64,6 @@ const config = {
       },
       backgroundImage: {
         "main-hero": "url('/assets/images/bali_hero.jpg')",
-        "login-hero": "url('/assets/images/login_page.jpg')",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -27,13 +27,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <div className="flex items-center gap-10">
-        <Link
-          href="/search"
-          className="text-abu-abu hover:text-abu-abu/50 text-lg drop-shadow-lg font-bold"
-        >
-          <Search />
-        </Link>
+      <div className="flex items-center">
         <UserButton
           afterSignOutUrl="/sign-up"
           appearance={{

@@ -3,6 +3,7 @@ import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "@/components/ui/toaster";
 
 const titiliumWeb = Titillium_Web({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={cn("antialiased", titiliumWeb.variable)}>
           {children}
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>

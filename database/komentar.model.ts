@@ -16,4 +16,4 @@ const KomentarSchema = new Schema<IKomentar>({
 
 const Komentar = models.Komentar || model<IKomentar>("Komentar", KomentarSchema);
 
-export default KomentarSchema;
+export default Komentar;
