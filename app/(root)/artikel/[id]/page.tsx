@@ -2,7 +2,6 @@ import Pagination from "@/components/shared/Pagination";
 import ParseHTML from "@/components/shared/ParseHTML";
 import RenderGambar from "@/components/shared/RenderGambar";
 import Upvote from "@/components/shared/Upvote";
-import Voting from "@/components/shared/Voting";
 import KomentarCard from "@/components/shared/cards/KomentarCard";
 import KomentarForm from "@/components/shared/forms/KomentarForm";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -38,7 +37,7 @@ const ArtikePageById = async ({ params, searchParams }: Props) => {
   }
 
   return (
-    <section className="pt-40 pl-8 max-w-[800px] mx-auto">
+    <section className="lg:pt-40 pt-24 lg:pl-8 max-w-[800px] mx-auto max-lg:px-5">
       <div className="flex w-full justify-between mb-4">
         <div className="flex items-center gap-2">
           <Avatar className="size-6">
@@ -66,8 +65,10 @@ const ArtikePageById = async ({ params, searchParams }: Props) => {
         </div>
       </div>
 
-      <h2 className="font-bold text-[40px]">{result.artikel.judul}</h2>
-      <div className="mt-4 text-abu-abu leading-8 text-xl">
+      <h2 className="font-bold sm:text-[40px] leading-10 text-xl">
+        {result.artikel.judul}
+      </h2>
+      <div className="mt-4 text-abu-abu sm:leading-8 leading-6 sm:text-xl text-sm">
         <ParseHTML data={result.artikel.deskripsi} />
       </div>
 

@@ -13,7 +13,7 @@ const AktivitasPage = () => {
         <GridOption
           title="Petualangan Alam"
           image="visit_bali/c7xxmyxxsapynci0libx"
-          className="h-full md:h-32  bg-green-200"
+          className="h-full md:h-32 row-span-2 bg-green-200"
         />
         <GridOption
           title="Kuliner Bali"

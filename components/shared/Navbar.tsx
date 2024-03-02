@@ -1,12 +1,11 @@
 import { topBar } from "@/constant";
 import { UserButton } from "@clerk/nextjs";
-import { Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between w-full absolute top-0 z-20">
+    <nav className="flex items-center justify-between w-full absolute top-0 z-20 max-lg:hidden px-5">
       <Link href="/">
         <Image
           src="/assets/images/logo.png"

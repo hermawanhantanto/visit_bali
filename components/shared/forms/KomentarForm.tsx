@@ -102,7 +102,10 @@ const KomentarForm = ({ artikelId, userId, isiArtikel }: Props) => {
         </Button>
       </div>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-8 flex flex-col"
+        >
           <FormField
             control={form.control}
             name="komentar"
@@ -160,7 +163,7 @@ const KomentarForm = ({ artikelId, userId, isiArtikel }: Props) => {
           <Button
             type="submit"
             disabled={isLoading}
-            className="bg-abu-abu hover:bg-abu-abu/50"
+            className="bg-abu-abu hover:bg-abu-abu/50 self-end"
           >
             {isLoading ? <Spinner /> : "Kirim Komentar"}
           </Button>

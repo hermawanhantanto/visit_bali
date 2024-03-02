@@ -17,7 +17,7 @@ const DestinasiPage = async ({ searchParams }: Props) => {
     page: Number(searchParams.page),
   });
   return (
-    <section className="max-w-[1440px] mx-auto pt-36 pl-8">
+    <section className="lg:max-w-[1440px] lg:mx-auto lg:pt-36 pt-24 lg:p-8 p-5">
       <h1 className="text-[40px] font-black">Destinasi</h1>
       <p className="text-abu-abu text-[20px] max-w-[700px] leading-8 ">
         Temukan keajaiban alam, warisan budaya, dan petualangan tak terlupakan

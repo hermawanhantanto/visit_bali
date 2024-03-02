@@ -41,18 +41,17 @@ const Header = () => {
   };
 
   return (
-    <header className="flex w-full h-screen bg-main-hero bg-cover bg-center bg-no-repeat justify-center items-center ">
+    <header className="flex w-full h-screen bg-main-hero bg-cover bg-center bg-no-repeat justify-center items-center max-sm:px-3">
       <div className="max-w-[1440px] flex flex-col gap-2 text-center">
-        <h1 className="text-white text-[61px] font-black drop-shadow-lg animate-text-bounce-slow">
+        <h1 className="text-white sm:text-[61px] text-[30px] font-black drop-shadow-lg animate-text-bounce-slow">
           <span className="border-r-white drop-shadow-lg border-r-4">
             {text}
           </span>
         </h1>
-        <p className="max-w-[600px] text-white drop-shadow-lg font-bold leading-7 text-xl">
+        <p className="sm:max-w-[600px] text-white drop-shadow-lg font-bold leading-7 sm:text-xl text-sm">
           Jelajahi keindahan alam dan budaya yang memukau. Dapatkan pengalaman
           liburan yang tak terlupakan di Bali.
         </p>
-      
       </div>
     </header>
   );

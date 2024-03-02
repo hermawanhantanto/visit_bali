@@ -9,17 +9,17 @@ interface Props {
   searchParams: {
     filter: string;
     page: string;
-  }
+  };
 }
 
-const ArtikelPage = async ({searchParams}: Props) => {
+const ArtikelPage = async ({ searchParams }: Props) => {
   const results = await getAllArtikel({
     filter: searchParams.filter,
     page: Number(searchParams.page),
   });
 
   return (
-    <section className="max-w-[1440px] pt-36 pl-8 mx-auto">
+    <section className="lg:max-w-[1440px] lg:mx-auto lg:pt-36 pt-24 lg:p-8 p-5">
       <h2 className="text-[40px] font-black">Artikel</h2>
       <p className="text-abu-abu max-w-[700px] text-[20px] leading-8">
         Setiap artikel adalah sumber inspirasi untuk petualangan Anda
@@ -27,11 +27,11 @@ const ArtikelPage = async ({searchParams}: Props) => {
         merencanakan perjalanan yang berarti, dan merayakan keindahan Pulau Bali
         ini melalui mata dan kata.
       </p>
-      <div className="flex items-center justify-between mt-10">
+      <div className="flex sm:items-center justify-between mt-10 sm:flex-row flex-col-reverse max-sm:gap-8">
         <ArtikelFilters />
         <Link
           href="/artikel/buat_artikel"
-          className="bg-abu-abu text-white hover:bg-abu-abu/50 font-semibold rounded py-2.5 px-6 transition-colors ease-in-out duration-300 "
+          className="bg-abu-abu max-sm:self-end text-white hover:bg-abu-abu/50 font-semibold rounded py-2.5 px-6 transition-colors ease-in-out duration-300 "
         >
           Buat Artikel
         </Link>

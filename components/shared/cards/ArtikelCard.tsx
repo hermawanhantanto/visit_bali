@@ -40,7 +40,9 @@ const ArtikelCard = ({ artikel }: Props) => {
             <AvatarImage src={artikel.penulis.picture} />
             <AvatarFallback>?</AvatarFallback>
           </Avatar>
-          <p className="font-semibold text-sm">{artikel.penulis.name}</p>
+          <p className="font-semibold sm:text-sm text-xs">
+            {artikel.penulis.name}
+          </p>
         </div>
         <Voting
           likes={artikel.likes.length}

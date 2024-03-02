@@ -181,7 +181,7 @@ const ArtikelForm = ({ artikel, mongoUser }: Props) => {
                   >
                     {({ open }) => (
                       <Button
-                        className="rounded bg-black text-white font-semibold w-fit"
+                        className="rounded bg-abu-abu hover:bg-abu-abu/50 text-white font-semibold w-fit"
                         onClick={(e) => {
                           e.preventDefault();
                           open();
@@ -200,7 +200,11 @@ const ArtikelForm = ({ artikel, mongoUser }: Props) => {
             </FormItem>
           )}
         />
-        <Button type="submit" disabled={isLoading}>
+        <Button
+          type="submit"
+          disabled={isLoading}
+          className="bg-abu-abu hover:bg-abu-abu/50"
+        >
           {isLoading ? <Spinner /> : "Buat Artikel"}
         </Button>
       </form>
