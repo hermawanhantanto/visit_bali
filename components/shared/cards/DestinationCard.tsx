@@ -38,7 +38,7 @@ const DestinationCard = ({ destination }: Props) => {
           </Link>
           <div className="absolute bottom-0 left-0 w-full bg-abu-abu/50 h-0.5 transform scale-x-0 origin-left transition-transform duration-200 group-hover:scale-x-50" />
         </div>
-        <p className="max-w-[600px] max-h-[300px] line-clamp-3 text-abu-abu font-semibold">
+        <p className="max-w-[600px] max-h-[300px] line-clamp-3 text-abu-abu ">
           {destinasi.deskripsi}
         </p>
       </div>

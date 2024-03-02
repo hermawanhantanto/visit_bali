@@ -2,7 +2,7 @@ import GridOption from "@/components/shared/GridOption";
 
 const AktivitasPage = () => {
   return (
-    <section className="pt-36 pl-8 max-w-[1440px] mx-auto ">
+    <section className="lg:max-w-[1440px] lg:mx-auto lg:pt-36 pt-24 lg:p-8 p-5">
       <h2 className="text-[40px] font-black">Aktivitas</h2>
       <p className="text-abu-abu max-w-[700px] text-[20px] leading-8">
         Mari temukan beragam aktivitas yang bisa menjadi hiasan momen-momen tak
